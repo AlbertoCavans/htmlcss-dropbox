@@ -27,23 +27,23 @@
 
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="header-page">
       <!-- NAV SX -->
-      <nav class="header-sx">
+      <nav class="header-page-sx">
         <ul>
           <li><img src="./img/logo-dropbox-small.png" alt="" /></li>
-          <li><a class="link-header" href="#">Perché Dropbox</a></li>
-          <li><a class="link-header" href="#">Funzioni</a></li>
-          <li><a class="link-header" href="#">Piani e Prezzi</a></li>
+          <li><a class="link-header-page" href="#">Perché Dropbox</a></li>
+          <li><a class="link-header-page" href="#">Funzioni</a></li>
+          <li><a class="link-header-page" href="#">Piani e Prezzi</a></li>
         </ul>
       </nav>
 
       <!-- NAV DX -->
-      <nav class="header-dx">
+      <nav class="header-page-dx">
         <ul>
-          <li><a class="link-header" href="#">Supporto</a></li>
+          <li><a class="link-header-page" href="#">Supporto</a></li>
           <li>
-            <a class="link-header" href="#">Contatta l'ufficio vendite</a>
+            <a class="link-header-page" href="#">Contatta l'ufficio vendite</a>
           </li>
           <li><a class="link-header" href="#">Accedi</a></li>
           <li><a href="#" class="button-blue">Inizia</a></li>
@@ -86,20 +86,50 @@
           <input type="radio" name="period" />Fatturazione mensile
           <input type="radio" name="period" />Fatturazione annuale
 
+          <!-- COLUMNS -->
           <div class="subscriptions-options">
+            <!-- COLUMN-1 -->
             <div class="subscriptions-card">
-              <div class="subscriptions-type"></div>
-              <div class="subscriptions-info"></div>
+              <header class="subscriptions-header">
+                <i class="fa-solid fa-user"></i> Singolo
+              </header>
+              <div class="subscriptions-type">
+                <ul class="subscriptions-plan">
+                  <li class="subscriptions-title"><h3>Professional</h3></li>
+                  <li class="subscriptions-price">€ 12.00</li>
+                  <li class="subscriptions-period">/mese</li>
+                </ul>
+                <ul class="subscriptions-plan-info">
+                  <li>1 utente</li>
+                  <li>5 TB di spazio di archiviazione sicuro</li>
+                  <li>
+                    Funzioni di produttività premium e condivisione semplice e
+                    sicura
+                  </li>
+                </ul>
+                <div><button>Prova gratis per 30 giorni</button></div>
+                <p>oppure <a href="#">acquista ora</a></p>
+                <hr />
+                <ul class="subscriptions-plan-keypoints">
+                  Punti Salienti del piano
+                  <li class="subscriptions-plan-keypoint">
+                    Invia file fino a 100 GB con Dropbpx Transfert
+                  </li>
+                  <li class="subscriptions-plan-keypoint">
+                    Cartelle offline su dispositivi mobili
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="subscriptions-card">
               <div class="subscriptions-type"></div>
-              <div class="subscriptions-info"></div>
+              <div class="subscriptions-plan"></div>
             </div>
 
             <div class="subscriptions-card">
               <div class="subscriptions-type"></div>
-              <div class="subscriptions-info"></div>
+              <div class="subscriptions-plan"></div>
             </div>
           </div>
         </section>
