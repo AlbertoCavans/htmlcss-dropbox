@@ -40,3 +40,12 @@ a {
   background-color: lightgrey;
   padding: 2rem;
 }
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  /* DEBUG */
+  background-color: lightgray;
+}
