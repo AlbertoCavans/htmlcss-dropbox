@@ -58,23 +58,23 @@ a {
 
 /* HEADER */
 
-header {
+.header-page {
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-sx ul li,
-.header-dx ul li {
+.header-page-sx ul li,
+.header-page-dx ul li {
   padding: 0 10px;
 }
 
-.header-sx ul {
+.header-page-sx ul {
   line-height: 60px;
 }
 
-.header-sx ul li img {
+.header-page-sx ul li img {
   position: relative;
   top: 5px;
 }
@@ -112,7 +112,7 @@ h1 {
 
 .column-sx-jumbotron i {
   font-size: 50px;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .column-dx-jumbotron img {
@@ -124,7 +124,8 @@ h1 {
 h2 {
   margin-top: 130px;
   padding-bottom: 30px;
-  font-size: 35px;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .container-slim .subscriptions-section .subscriptions-options {
@@ -134,11 +135,36 @@ h2 {
 }
 
 .subscriptions-card {
-  width: 250px;
+  width: 30%;
   height: 800px;
   gap: 10px;
   display: inline;
 
   /* debug */
-  background-color: lightgray;
+  background-color: gray;
+}
+
+.subscriptions-header {
+  text-align: center;
+  border: 1px solid lightgrey;
+  padding: 10px 0;
+}
+
+.subscriptions-type {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.subscriptions-type li {
+  padding: 5px 0;
+}
+.subscriptions-plan {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscriptions-plan {
+  font-size: 1.5rem;
 }
