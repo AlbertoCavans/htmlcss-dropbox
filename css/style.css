@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
 }
 
 body {
@@ -33,6 +34,12 @@ a {
   padding: 0 15px;
 }
 
+.button-blue {
+  background-color: hsl(217.18deg 100% 50%);
+  color: white;
+  padding: 7px 15px;
+}
+
 /* DEBUG */
 
 .debug {
@@ -42,10 +49,25 @@ a {
 }
 
 header {
-  height: 60px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   /* DEBUG */
   background-color: lightgray;
+}
+
+.header-sx ul li,
+.header-dx ul li {
+  padding: 0 10px;
+}
+
+.header-sx ul {
+  line-height: 60px;
+}
+
+.header-sx ul li img {
+  position: relative;
+  top: 5px;
 }
