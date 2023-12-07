@@ -34,6 +34,12 @@ a {
   padding: 0 15px;
 }
 
+.container-slim {
+  width: 55%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .button-blue {
   background-color: hsl(217.18deg 100% 50%);
   color: white;
@@ -111,4 +117,28 @@ h1 {
 
 .column-dx-jumbotron img {
   width: 4000px;
+}
+
+/* SUBSCRIPTIONS SECTION */
+
+h2 {
+  margin-top: 130px;
+  padding-bottom: 30px;
+  font-size: 35px;
+}
+
+.container-slim .subscriptions-section .subscriptions-options {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.subscriptions-card {
+  width: 250px;
+  height: 800px;
+  gap: 10px;
+  display: inline;
+
+  /* debug */
+  background-color: lightgray;
 }
