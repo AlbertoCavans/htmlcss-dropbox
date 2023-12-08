@@ -26,11 +26,6 @@ a {
   text-decoration: none;
 }
 
-hr {
-  width: 20%;
-  color: lightgray;
-}
-
 /* UTILS */
 
 .container-large {
@@ -128,9 +123,65 @@ h1 {
 
 h2 {
   margin-top: 130px;
-  padding-bottom: 30px;
   font-size: 40px;
   font-weight: 600;
+}
+
+.time-span-options {
+  margin: 50px 0;
+}
+
+/* Radio option */
+.radio-option {
+  position: relative;
+  padding: 0 40px;
+  margin: 50px 0;
+  font-size: 1rem;
+}
+
+/* Hide default radio button */
+.radio-option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+
+/* Blue checked background */
+.radio-option input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* White dot check */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* White dot check if checked */
+.radio-option input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* White dot check settings */
+.radio-option .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
 }
 
 .container-slim .subscriptions-section .subscriptions-options {
@@ -141,7 +192,7 @@ h2 {
 
 .subscriptions-card {
   width: 30%;
-  height: 800px;
+  min-height: 1000px;
   gap: 10px;
   display: inline;
   border: 2px solid lightgray;
@@ -163,6 +214,7 @@ h2 {
 .subscriptions-plan {
   display: flex;
   flex-direction: column;
+  padding: 10px 0;
 }
 
 .subscriptions-plan h3 {
@@ -178,11 +230,12 @@ h2 {
 .subscriptions-plan-info {
   --icon-space: 1.3em;
   list-style: none;
-  padding: 50px 0;
+  padding-bottom: 40px;
 }
 
 .subscriptions-plan-info li {
   padding-left: var(--icon-space);
+  margin-top: 30px;
 }
 
 .subscriptions-plan-info li:first-child:before {
@@ -209,14 +262,29 @@ h2 {
   width: var(--icon-space);
 }
 
+.subscriptions-type .sell-ads-card {
+  margin: 30px 0;
+}
+
+.sell-ads-card a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.subscriptions-type hr {
+  width: 20%;
+  color: lightgray;
+}
+
 .subscriptions-plan-keypoints {
   --icon-space: 1.3em;
   list-style: none;
-  padding: 0;
+  padding: 40px 0;
 }
 
 .subscriptions-plan-keypoints li {
   padding-left: var(--icon-space);
+  padding-top: 30px;
 }
 
 .subscriptions-plan-keypoints li:before {
@@ -225,4 +293,5 @@ h2 {
   display: inline-block;
   margin-left: calc(var(--icon-space) * -1);
   width: var(--icon-space);
+  color: hsl(217.18deg 100% 50%);
 }
