@@ -83,8 +83,16 @@
         <!-- SUBSCRIPTIONS -->
         <section class="subscriptions-section">
           <h2>Trova il piano business che fa per te</h2>
-          <input type="radio" name="period" />Fatturazione mensile
-          <input type="radio" name="period" />Fatturazione annuale
+          <div class="time-span-options">
+            <label class="radio-option">
+              <input type="radio" checked="checked" name="radio" />
+              <span class="checkmark"></span>Fatturazione mensile
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>Fatturazione annuale
+            </label>
+          </div>
 
           <!-- COLUMNS -->
           <div class="subscriptions-options">
@@ -96,7 +104,7 @@
               <div class="subscriptions-type">
                 <ul class="subscriptions-plan">
                   <li class="subscriptions-title"><h3>Professional</h3></li>
-                  <li class="subscriptions-price">€ 12.00</li>
+                  <li class="subscriptions-price"><b>€ 12.00</b></li>
                   <li class="subscriptions-period">/mese</li>
                 </ul>
                 <ul class="subscriptions-plan-info">
@@ -108,11 +116,13 @@
                   </li>
                 </ul>
                 <div>
-                  <button class="button-blue">
-                    Prova gratis per 30 giorni
-                  </button>
+                  <a href="#">
+                    <button class="button-blue">
+                      Prova gratis per 30 giorni
+                    </button>
+                  </a>
                 </div>
-                <p>oppure <a href="#">acquista ora</a></p>
+                <p class="sell-ads-card">oppure <a href="#">acquista ora</a></p>
                 <hr />
                 <ul class="subscriptions-plan-keypoints">
                   Punti Salienti del piano
@@ -126,14 +136,86 @@
               </div>
             </div>
 
+            <!-- COLUMN-2 -->
             <div class="subscriptions-card">
-              <div class="subscriptions-type"></div>
-              <div class="subscriptions-plan"></div>
+              <header class="subscriptions-header">
+                <i class="fa-solid fa-users"></i> Team
+              </header>
+              <div class="subscriptions-type">
+                <ul class="subscriptions-plan">
+                  <li class="subscriptions-title"><h3>Advanced</h3></li>
+                  <li class="subscriptions-price"><b>€ 18.00</b></li>
+                  <li class="subscriptions-period">/utente/mese</li>
+                </ul>
+                <ul class="subscriptions-plan-info">
+                  <li>3 o più</li>
+                  <li>Tutto lo spazio di cui ha bisogno il tuo team</li>
+                  <li>
+                    Sofisticate funzioni di controllo e per tenere al sicuro
+                    tutti i file del tuo team
+                  </li>
+                </ul>
+                <div>
+                  <a href="#">
+                    <button class="button-blue">
+                      Prova gratis per 30 giorni
+                    </button>
+                  </a>
+                </div>
+                <p class="sell-ads-card">oppure <a href="#">acquista ora</a></p>
+                <hr />
+                <ul class="subscriptions-plan-keypoints">
+                  Punti Salienti del piano
+                  <li class="subscriptions-plan-keypoint">
+                    Nessun limite di spazio per i file
+                  </li>
+                  <li class="subscriptions-plan-keypoint">
+                    Cartelle offline su dispositivi mobili
+                  </li>
+                  <li>Risparmio del 50% rispetto alle iscrizioni singole</li>
+                  <li>Possibilità di inserire nuovi membri del team</li>
+                  <li>Gestione dei permessi in base ai ruoli</li>
+                </ul>
+              </div>
             </div>
 
+            <!-- COLUMN-3 -->
             <div class="subscriptions-card">
-              <div class="subscriptions-type"></div>
-              <div class="subscriptions-plan"></div>
+              <header class="subscriptions-header">
+                <i class="fa-solid fa-building"></i> Azienda
+              </header>
+              <div class="subscriptions-type">
+                <ul class="subscriptions-plan">
+                  <li class="subscriptions-title"><h3>Enterprise</h3></li>
+                  <li class="subscriptions-price"><b>Contattaci</b></li>
+                  <li class="subscriptions-period">-</li>
+                </ul>
+                <ul class="subscriptions-plan-info">
+                  <li>10 o più utenti</li>
+                  <li>Soluzioni personalizzabili per la tua azienda</li>
+                  <li>
+                    Assistenza personalizzata per aiutare gli amministratori in
+                    una gestione su larga scala
+                  </li>
+                </ul>
+                <div>
+                  <a href="#">
+                    <button class="button-blue">
+                      Prova gratis per 30 giorni
+                    </button>
+                  </a>
+                </div>
+                <p class="sell-ads-card">oppure <a href="#">acquista ora</a></p>
+                <hr />
+                <ul class="subscriptions-plan-keypoints">
+                  Punti Salienti del piano
+                  <li class="subscriptions-plan-keypoint">
+                    Cartelle offline su dispositivi mobili
+                  </li>
+                  <li>Servizio assistenza 24/h</li>
+                  <li>Possibilità di personalizzazione totale</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
