@@ -187,8 +187,10 @@ h2 {
 .container-slim .subscriptions-section .subscriptions-options {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
+/* SUBSCRIPTIONS CARD/COLUMNS */
 
 .subscriptions-card {
   width: 30%;
@@ -294,4 +296,41 @@ h2 {
   margin-left: calc(var(--icon-space) * -1);
   width: var(--icon-space);
   color: hsl(217.18deg 100% 50%);
+}
+
+/* CONTACT FOR ENTERPRISE CARD */
+
+.contact-for-enterprise-card {
+  border: 2px solid lightgray;
+  margin: 40px 0;
+}
+
+.cfe-body {
+  display: flex;
+  margin: 30px 20px;
+}
+
+.cfe-column-sx {
+  width: 60%;
+}
+
+.cfe-column-dx {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+
+.cfe-header {
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 0;
+}
+
+.cfe-column-sx h3 {
+  font-size: 1.5rem;
+}
+
+.cfe-column-sx div {
+  font-weight: bold;
+  margin-bottom: 40px;
 }
