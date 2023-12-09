@@ -363,3 +363,22 @@ h2 {
 .column-dx p {
   margin: 30px 0;
 }
+
+/* FEATURES */
+
+.features-section {
+  min-height: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features-section h2 {
+  margin-bottom: 40px;
+}
+
+.features-section .features-card {
+  height: 30%;
+  width: 30%;
+  margin-bottom: 30px;
+}
