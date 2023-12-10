@@ -50,6 +50,11 @@ a {
   padding: 0 15px;
 }
 
+.container-larger {
+  width: 100%;
+  background-color: hsl(0deg 0% 96.08%);
+}
+
 .button-blue {
   background-color: hsl(217.18deg 100% 50%);
   color: white;
@@ -64,6 +69,17 @@ a {
   padding: 10px 20px;
   flex-grow: 0;
   border-style: 2px solid black;
+}
+
+h2 {
+  margin-top: 130px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.p-blue-link .blue-link {
+  color: blue;
+  text-decoration: underline;
 }
 
 /* DEBUG */
@@ -138,12 +154,6 @@ h1 {
 }
 
 /* SUBSCRIPTIONS SECTION */
-
-h2 {
-  margin-top: 130px;
-  font-size: 40px;
-  font-weight: 600;
-}
 
 .time-span-options {
   margin: 50px 0;
@@ -282,13 +292,8 @@ h2 {
   width: var(--icon-space);
 }
 
-.subscriptions-type .sell-ads-card {
+.subscriptions-type .p-blue-link {
   margin: 30px 0;
-}
-
-.sell-ads-card a {
-  color: blue;
-  text-decoration: underline;
 }
 
 .subscriptions-type hr {
@@ -381,4 +386,23 @@ h2 {
   height: 30%;
   width: 30%;
   margin-bottom: 30px;
+}
+
+/* ALREADY CLIENTI SECTION */
+
+.pre-sponsor-p {
+  margin: 50px 0;
+}
+
+/* SPONSOR SECTION */
+
+.sponsor-section {
+  height: calc(100vw / 3);
+  display: flex;
+}
+
+.big-square {
+  height: 100%;
+  width: calc(100% / 3);
+  border: 3px dashed black;
 }
