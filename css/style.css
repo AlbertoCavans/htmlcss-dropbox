@@ -71,6 +71,14 @@ a {
   border-style: 2px solid black;
 }
 
+.button-white {
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 20px;
+  flex-grow: 0;
+  border-style: none;
+}
+
 h2 {
   margin-top: 130px;
   font-size: 40px;
@@ -80,6 +88,11 @@ h2 {
 .p-blue-link .blue-link {
   color: blue;
   text-decoration: underline;
+}
+
+hr {
+  width: 20%;
+  color: lightgray;
 }
 
 /* DEBUG */
@@ -296,11 +309,6 @@ h1 {
   margin: 30px 0;
 }
 
-.subscriptions-type hr {
-  width: 20%;
-  color: lightgray;
-}
-
 .subscriptions-plan-keypoints {
   --icon-space: 1.3em;
   list-style: none;
@@ -388,7 +396,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* ALREADY CLIENTI SECTION */
+/* ALREADY CLIENT SECTION */
 
 .pre-sponsor-p {
   margin: 50px 0;
@@ -401,8 +409,100 @@ h1 {
   display: flex;
 }
 
+/* BIG SQUARE GENERAL */
 .big-square {
   height: 100%;
   width: calc(100% / 3);
-  border: 3px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.big-square .small-square {
+  width: calc(100% / 2);
+  height: calc(100% / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-sponsor {
+  max-width: calc(100% / 2);
+  max-height: calc(100% / 2);
+  width: auto;
+  height: auto;
+}
+
+/* BIG SQUARE SX */
+.big-square .designit-square {
+  background-color: hsl(112.5deg 38.89% 71.76%);
+  border: 10px solid hsl(111.43deg 38.89% 85.88%);
+}
+
+.big-square .asu-square {
+  background-color: hsl(336.4deg 84.76% 20.59%);
+}
+
+.big-square .uoflorida-square {
+  background-color: hsl(197.18deg 100% 40.39%);
+}
+
+.big-square .topps-square {
+  background-color: hsl(0deg 100% 55.49%);
+}
+
+.big-square .small-square img {
+  filter: brightness(0) invert(1);
+}
+
+/* BIG SQUARE CX */
+#big-square-cx {
+  padding: 40px;
+  display: block;
+}
+
+#big-square-cx .big-square-header {
+  padding: 30px 0;
+}
+
+#big-square-cx p {
+  padding: 30px 0;
+}
+
+address {
+  font-style: normal;
+  padding: 10px 0;
+}
+
+/* BIG SQUARE DX */
+.big-square .wbr-square {
+  background-color: hsl(351.27deg 100% 41.76%);
+}
+
+.big-square .hearst-square {
+  background-color: hsl(207.06deg 51.52% 80.59%);
+}
+
+.big-square .lonely-planet-square {
+  background-color: hsl(228.1deg 81.69% 27.84%);
+}
+
+.big-square .clear-channel-square {
+  background-color: hsl(48.7deg 100% 59.41%);
+}
+
+/* SUBSCRIBE YOUR COMPANY */
+.subscribe-your-company {
+  background-color: hsl(207.06deg 51.52% 80.59%);
+  height: calc(100vw / 6);
+}
+.container-slim {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.container-slim h2 {
+  margin-top: 0;
+  color: hsl(336.67deg 84.91% 20.78%);
 }
